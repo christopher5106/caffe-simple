@@ -1,5 +1,3 @@
-
-
 bash "install-caffe" do
   user "root"
   cwd "/home/ubuntu"
@@ -12,6 +10,7 @@ bash "install-caffe" do
   apt-get -y install libatlas-base-dev
   apt-get -y install python-dev
   apt-get -y install awscli
+  apt-get -y install python-pip
   git clone https://github.com/BVLC/caffe.git
   cd caffe
   cd python
